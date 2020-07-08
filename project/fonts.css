@@ -1,0 +1,85 @@
+@font-face{
+    font-family: 'CircularStd-Black';
+    src: url(Fonts/CircularStd-Black.otf) format("opentype");
+}
+@font-face{
+    font-family: 'CircularStd-Bold';
+    src: url(Fonts/CircularStd-Bold.otf) format("opentype");
+}
+@font-face{
+    font-family: 'CircularStd-Book';
+    src: url(Fonts/CircularStd-Book.otf) format("opentype");
+}
+@font-face{
+    font-family: 'CircularStd-Medium';
+    src: url(Fonts/CircularStd-Medium.otf) format("opentype");
+}
+@font-face{
+    font-family: 'DMSerifDisplay-Italic';
+    src: url(Fonts/DMSerifDisplay-Italic.ttf) format("truetype");
+}
+
+@font-face{
+    font-family: 'DMSerifDisplay-Regular';
+    src: url(Fonts/DMSerifDisplay-Regular.ttf) format("truetype");
+}
+@font-face{
+    font-family: 'SofiaPro-Black';
+    src: url(Fonts/Sofia\ Pro\ Black\ [TheFontsMaster.com].otf) format("opentype");
+}
+@font-face{
+    font-family: 'SofiaPro-Black-Italic';
+    src: url(Fonts/Sofia\ Pro\ Black\ Italic\ [TheFontsMaster.com].otf) format("opentype");
+}
+@font-face{
+    font-family: 'SofiaPro-Bold';
+    src: url(Fonts/Sofia\ Pro\ Bold\ [TheFontsMaster.com].otf) format("opentype");
+}
+@font-face{
+    font-family: 'SofiaPro-ExtraLight';
+    src: url(Fonts/Sofia\ Pro\ Extra\ Light\ [TheFontsMaster.com].otf) format("opentype");
+}
+@font-face{
+    font-family: 'SofiaPro-ExtraLight-Italic';
+    src: url(Fonts/Sofia\ Pro\ Extra\ Light\ Italic\ [TheFontsMaster.com].otf) format("opentype");
+}
+@font-face{
+    font-family: 'SofiaPro-Italic';
+    src: url(Fonts/Sofia\ Pro\ Italic\ [TheFontsMaster.com].otf) format("opentype");
+}
+@font-face{
+    font-family: 'SofiaPro-Light';
+    src: url(Fonts/Sofia\ Pro\ Light\ [TheFontsMaster.com].otf) format("opentype");
+}
+@font-face{
+    font-family: 'SofiaPro-Light-Italic';
+    src: url(Fonts/Sofia\ Pro\ Light\ Italic\ [TheFontsMaster.com].otf) format("opentype");
+}
+@font-face{
+    font-family: 'SofiaPro-Medium';
+    src: url(Fonts/Sofia\ Pro\ Medium\ [TheFontsMaster.com].otf) format("opentype");
+}
+@font-face{
+    font-family: 'SofiaPro-Medium-Italic';
+    src: url(Fonts/Sofia\ Pro\ Medium\ Italic\ [TheFontsMaster.com].otf) format("opentype");
+}
+@font-face{
+    font-family: 'SofiaPro-Regular';
+    src: url(Fonts/Sofia\ Pro\ Regular\ [TheFontsMaster.com].otf) format("opentype");
+}
+@font-face{
+    font-family: 'SofiaPro-SemiBold';
+    src: url(Fonts/Sofia\ Pro\ Semi\ Bold\ [TheFontsMaster.com].otf) format("opentype");
+}
+@font-face{
+    font-family: 'SofiaPro-SemiBold-Italic';
+    src: url(Fonts/Sofia\ Pro\ Semi\ Bold\ Italic\ [TheFontsMaster.com].otf) format("opentype");
+}
+@font-face{
+    font-family: 'SofiaPro-UltraLight';
+    src: url(Fonts/Sofia\ Pro\ Ultra\ Light\ [TheFontsMaster.com].otf) format("opentype");
+}
+@font-face{
+    font-family: 'SofiaPro-UltraLight-Italic';
+    src: url(Fonts/Sofia\ Pro\ Ultra\ Light\ Italic\ [TheFontsMaster.com].otf) format("opentype");
+}

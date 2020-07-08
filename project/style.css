@@ -1,0 +1,246 @@
+.body{
+       margin:0px;
+       background-color:black   
+}
+.header{
+    clear:both;
+}
+
+.header__container{
+    margin:0px 344px 0px 360px; 
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo__image{
+    /* background-color:black; */
+    max-width: 78px;
+    max-height: 64px;
+}
+
+.navbar {
+    display:inline-block;
+}
+
+
+.nav__items{
+    display:flex;
+    max-width: 504px;
+    max-height: 21px;
+}
+
+.nav__item{
+   position:relative;
+   display:inline;
+   /* margin:10px; */
+}
+
+.nav__link,.nav__link--home,.nav__link--dropdown{
+    font-family: "CircularStd-Book";
+    font-size: 18px;
+    letter-spacing: 0.92px;
+    line-height: 23px;
+    text-decoration: none;
+    justify-content:space-between;
+    color:white;
+    padding: 10px;
+}
+
+.nav__link--home{
+    font-family:"CircularStd-Bold";
+}
+
+.nav__link--dropdown::after{
+    content:" ";
+
+}
+.dropdown__container {
+    background-color: #272626;
+    max-width:161px;
+    max-height:186px;
+    margin: auto;
+    position:absolute;
+    margin:0 626 776 1133;
+}
+
+.dropdown__items {
+    list-style: none;
+}
+
+
+.dropdown__link ,.dropdown__link--team {
+    text-decoration: none;
+    font-size: 18px;
+    letter-spacing:0.92px;
+    color: white;
+}
+
+.dropdown__link--team {
+    color: #55BBA6;
+}
+
+..dropdown__item:last-child::after{
+    content: " ";
+    background-color: #272626;
+}
+
+.nav__link--dropdown{
+    font-family: "CircularStd-Book";
+    font-size: 18px;
+    letter-spacing: 0.92px;
+    line-height: 23px;
+    color:white;
+    text-decoration: none;
+}
+
+.nav__link--dropdown::after{
+    content:" ";
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 2px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+.hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.0001),
+    rgba(5, 4, 2, 0.6)) ,url(hero-image.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: -1;
+    top: -190px;
+    position: relative;
+} 
+ .hero__heading{
+        font-family: "CircularStd-Black";
+        font-style: Black;
+        font-size: 16px;
+        letter-spacing: 2.42px;
+        color:white;
+        text-transform: uppercase;
+        max-width: 335px;
+        max-height: 20px;
+        margin-bottom: 0px;
+    }
+    .hero__title{
+        font-family: "DMSerifDisplay-Regular";
+        color: white;
+        font-size: 130px;
+        letter-spacing: 19.64px;
+        text-transform: uppercase;
+        max-width: 584px;
+        max-height: 178px;
+        margin: 0px;
+        line-height: 178px;
+    }
+    .hero__content {
+        font-family: "SofiaPro-Medium";
+        color: white;
+        font-size:18px;
+        letter-spacing: 1.72px;
+        max-width: 432px;
+        max-height: 90px;
+    }
+     .hero__undernote{
+        font-family: "SofiaPro-Medium";
+        color: white ;
+        font-size: 12px;
+        letter-spacing: 0,7px;
+        max-width: 447px;
+        max-height: 31px;
+        margin-top: 29px;
+        margin-bottom:70px;
+    }
+
+    .hero__buttons {
+        display: flex;
+        margin-bottom: 316px;
+    }
+
+    .hero__button {
+        background:#55BBA6;
+        font-family: "SofiaPro-Medium";
+        font-size: 18px;
+        letter-spacing: 0.7px;
+        line-height: 24px;
+        color: white;
+        border:2px;
+        padding: 22px 63.98px 13px 63px;
+        max-width: 250px;
+        max-height: 60px;
+        text-decoration: none;
+        display: block;
+
+    }
+
+    .hero__button--transparent{
+        background:rgba(255, 255, 255, 0.2) ;
+        font-family: "SofiaPro-Medium";
+        font-size:18px;
+        letter-spacing: 0.7px;
+        border:2px solid;
+        padding:22px 79px 14px 80px;
+        color:white;
+        text-decoration: none;
+        display: block;
+    }
+
+    .hero__inner {
+        margin-top: 309px;
+    }
+
+.aside__contact {
+   transform: rotate(-90deg);
+   background-color: white;
+   left:-507px;
+   /* float: left; */
+   position:absolute;
+   top: 507px;
+   max-width: 1080px;
+   width: 100%;
+   max-height: 90px;
+}
+
+.aside__content {
+    
+padding: 34px 0px;
+    
+padding-right: 200px;
+    
+padding-left: 170px;
+}
+
+.aside__item {
+    font-family: "SofiaPro-Medium";
+    font-size: 16px;
+    letter-spacing: 2.42px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.aside__item::before {
+    content: " ";
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+	background-color:#55BBA6;
+    margin: 0 20px;
+    display: inline-block;
+}
+
+.aside__item:first-child::before {
+    content:" ";
+    background-color: white;
+}
+
+.container {
+    margin:0px auto;
+    max-width: 1462px;
+    display: flex;
+    justify-content: space-between;
+    /* position: relative; */
+}
+
