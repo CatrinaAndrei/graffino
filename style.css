@@ -1,21 +1,25 @@
 .body {
     margin: 0px;
-    height: 1080px;
-    width: 1920px;
+    height: 100%;
+    width: 100%;
 }
 
 .nav {
     clear: both;
     z-index: 1;
-    max-width: 1830px;
+    width: 100%;
 }
 
 .nav__container {
-    margin: 0px 344px 0px 360px;
     position: relative;
     display: flex;
     justify-content: space-between;
     z-index: 1;
+}
+
+.nav__logo{
+    margin-right: 100px;
+    margin-left: 360px;
 }
 
 .logo__image {
@@ -32,6 +36,7 @@
     max-height: 21px;
     position: relative;
     top: 67px;
+    padding-right: 344px;
 }
 
 
@@ -97,6 +102,7 @@
 
 
 .dropdown {
+    /* display:none; */
     position: absolute;
     max-width: 161px;
     max-height: 186px;
@@ -104,6 +110,10 @@
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     left: 60px;
     top: 50.75px;
+}
+
+.dropdown--active{
+    display:block;
 }
 
 .dropdown::before{
@@ -245,6 +255,7 @@
     max-height: 31px;
     margin-top: 29px;
     margin-bottom: 70px;
+    line-height: 2.41;
 }
 
 .hero__CTA {
@@ -258,8 +269,8 @@
     letter-spacing: 0.7px;
     line-height: 1.33;
     color: white;
-    border: 2px;
-    padding: 22px 63.98px 2px 63px;
+    border: 2px solid #55BBA6;
+    padding: 22px 63.98px 14px 63px;
     max-width: 250px;
     max-height: 60px;
     text-decoration: none;
@@ -309,8 +320,6 @@
 
 .aside__content {
     padding: 36px 197px 31px 175px;
-    height: 22px;
-    width: 707px;
     margin: 0px;
 }
 
@@ -346,10 +355,11 @@
 }
 
 .about__container {
-    display: inline-block;
+    flex-wrap: wrap;
+    justify-content: center;
     position: relative;
     left: 360px;
-    margin-bottom: 97px;
+    margin-bottom: 97px;  
 }
 
 .about__mission {
@@ -368,6 +378,7 @@
 
 .about__content {
     display: inline-flex;
+    flex-wrap: wrap;
     font-family: "SofiaPro-Regular";
     font-size: 18px;
     color: #484848;
@@ -379,7 +390,6 @@
 .about__card {
     width: 487px;
     height: 601px;
-    margin: 0px;
     position: relative;
     background-image: radial-gradient(64.5% 64.5% at 96.09% -12.84%, rgba(0, 0, 0, 0.0001) 0%, rgba(5, 4, 2, 0.6) 100%), url(about-main.jpg);
     background-position: center;
@@ -387,7 +397,9 @@
 }
 
 .card__content {
-    position: absolute;
+    position: relative;
+    width: 275px;
+    padding-left: 80px;   
 }
 
 .card__content::before {
@@ -399,12 +411,19 @@
 
 .card__title {
 
-    font-family: "DMSerifDisplay-Regular";
-    font-size: 28px;
-    letter-spacing: 3.76px;
-    color: white;
-    margin-top: 129px;
-    margin-left: 80px;
+font-family: "DMSerifDisplay-Regular";
+
+font-size: 28px;
+
+line-height: 1.35;
+
+letter-spacing: 3.76px;
+
+color: white;
+
+margin-top: 129px;
+
+margin-bottom: 8px;
 }
 
 .card__title::before {
@@ -418,13 +437,13 @@
 .card__info {
     font-family: "SofiaPro-Regular";
     font-size: 18px;
+    line-height: 1.67;
     letter-spacing: 1.02px;
     color: white;
     display: inline-flex;
     max-width: 275px;
     max-height: 120px;
-    margin-left: 80px;
-    margin-top: 0px;
+    margin: 0px;
 }
 
 .card__info::first-line {
@@ -433,7 +452,7 @@
 
 }
 
-.hero__button--card {
+.card__button {
     background: #55BBA6;
     font-family: "SofiaPro-Medium";
     font-size: 18px;
@@ -446,12 +465,12 @@
     max-height: 60px;
     text-decoration: none;
     display: block;
-    margin-left: 80px;
-    margin-top: 40px;
+    /* margin-left: 80px; */
+    margin-top: 61px;
     position: absolute;
 }
 
-.hero__button--card:hover{
+.card__button:hover{
     background:#399280;
 }
 
@@ -503,7 +522,7 @@ transform: rotate(80deg) translate(-20%, -5%);
     background-image: url(about-cliff.jpg);
     position: relative;
     background-size: cover;
-    background-position: 0% 105%;
+    background-position: 0% 100%;
     height: 212px;
     transform: scale(2.5);
 }
@@ -522,4 +541,198 @@ transform: rotate(80deg) translate(-20%, -5%);
 .flex__small {
     display: flex;
     max-width: 709px;
+}
+
+
+
+
+
+@media only screen and (max-width: 768px){
+
+.aside__contact {
+    max-width: 80px;
+    max-height: 1024px;
+}
+
+.aside__content { 
+    
+padding: 40px 160px 27px 158px;
+}
+
+.navbar {
+    visibility: hidden;
+   
+}
+
+.navbar__mobile {
+    visibility:visible;
+    display:block;
+    content: " ";
+    width: 18px;
+    height: 0.2px;
+    border: 2px solid white;
+    border-radius: 100px;
+    margin-left:501px;
+    margin-bottom: 6px;
+}
+
+.navbar__mobile:nth-child(3) {
+    margin-bottom: 0px;
+}
+
+.nav__logo {
+    margin-left: 120px;
+}
+
+.hero {
+    background-position-x: 86%;
+    background-position-y: 10%;
+    padding-bottom: 274px;
+}
+
+.hero__inner {
+    padding-left: 39px;
+    padding-top: 277px;
+}
+
+.hero__title {
+    font-size: 110px;
+    letter-spacing: 16.62px;
+}
+
+
+.about__container {
+    left: 120px;
+}
+
+.about__content:nth-child(3) {
+    display:none;
+}
+
+.lake__container{
+    display:none;
+}
+
+
+.cliff__container {
+    max-width: 271px;
+    height: 212px;
+    overflow: hidden;
+    margin-left: 0px;
+}
+
+.flex__sheep {
+    max-width: 271px;
+    height: 384px;
+    overflow: hidden;
+}
+.photo__sheep {
+    height: 100%;
+    margin-top: 0px;
+}
+
+
+.about {
+    margin-bottom: 97px;
+}
+.about__card {
+    padding-left: 80px;
+    padding-right: 132px;
+}
+
+.card__content{
+    padding: 0px;
+}
+
+@media only screen and (max-width: 375px){
+
+.navbar__mobile{
+    visibility:visible;
+    display:block;
+    content: " ";
+    width: 18px;
+    height: 0.2px;
+    border: 2px solid white;
+    border-radius: 100px;
+    margin-left:160px;
+    margin-bottom: 6px;
+}
+
+.hero {
+    left: 70px;
+    background-position-x:82%;
+}
+
+.hero__heading {
+    max-height: 40px;
+    max-width: 187px;
+    padding-bottom: 4px;
+}
+
+.hero__title {
+    font-size: 60px;
+}
+
+.hero__content {
+    padding-right: 30px;
+}
+
+.hero__undernote {
+    padding-right: 80px;
+}
+
+.hero__CTA {
+    flex-wrap:wrap;
+}
+
+.hero__button {
+    margin-bottom: 20px;
+}
+
+.aside__contact {
+    min-width: 861px;
+}
+
+.aside__content {
+    
+padding: 27px 78px 22px 75px;
+}
+.about__container {
+    left: 27px;
+}
+
+.about__mission {
+
+padding-left: 90px;
+
+}
+.about__content {
+    
+margin-bottom: 40px;
+    
+margin-right: 0px;
+}
+.about__flex {
+    flex-direction: column;
+}
+
+.about__card {
+    width:350px;
+    padding: 0px;
+}
+
+.card__content {
+    padding-left: 50px;
+}
+
+.flex__sheep{
+    max-width: 347px;
+}
+
+.cliff__container{
+    max-width:347px;
+
+}
+
+}
 }
