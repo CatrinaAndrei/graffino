@@ -18,29 +18,34 @@
                     <img class="logo__image" src="Logo.png" alt="Save the planet Logo">
                 </a>
             </div>
-            <nav class="navbar">
-            <span class="navbar__mobile"> </span>
-            <span class="navbar__mobile"> </span>
-            <span class="navbar__mobile"> </span>
+            <nav id="navbar"class="navbar">
+                <div id="navbar__hamburger" class="navbar__hamburger">       
+                   <span class="navbar__hamburger-bar"></span>           
+                </div>
                 <ul class="nav__list">
+                <div class="nav__logo--dropdown">
+                <a class="logo--dropdown" href="#">
+                    <img class="logo__image--dropdown" src="Logo.png" alt="Save the planet Logo">
+                </a>
+            </div>
                     <li class="nav__item--home">
                         <a class="nav__link--home" href="#">Home</a>
                     </li>
                     <li class="nav__item">
-                        <a class="nav__link--dropdown" href="#">Story</a>
+                        <a  id="nav__link--dropdown" class="nav__link--dropdown" href="#">Story</a>
+                    </li>
+                    <li id="nav__item--contact"class="nav__item--contact">
+                        <a class="nav__link--contact" href="#">Contact</a>
                     </li>
                     <li class="nav__item">
-                        <a class="nav__link" href="#">Contact</a>
+                        <a class="nav__link--lessons" href="#">Lessons</a>
                     </li>
                     <li class="nav__item">
-                        <a class="nav__link" href="#">Lessons</a>
-                    </li>
-                    <li class="nav__item">
-                        <a class="nav__link" href="#">Account</a>
+                        <a class="nav__link--account" href="#">Account</a>
                     </li>
                 </ul>
-                <div class="dropdown">
-                    <ul class="dropdown__list">
+                <div id="dropdown" class="dropdown">
+                    <ul id ="dropdown__list" class="dropdown__list">
                         <li class="dropdown__item">
                             <a class="dropdown__link" href="#">Team</a>
                         </li>
@@ -53,11 +58,13 @@
                             <a class="dropdown__link" href="#">Future</a>
                         </li>
                     </ul>
+                    </div>
                 </div>
             </nav>
+            
         </div>
     </header>
-    <section class="hero">
+    <section id= "hero" class="hero">
         <div class="container">
             <div class="aside">
                 <aside class="aside__contact">
@@ -79,6 +86,11 @@
                     <a class="hero__button--transparent" href="#">Play video</a>
                 </div>
             </div>
+            <div class="hero__slider">
+                 <span id="hero__slider-btn--active" class="hero__slider-btn"> 1 </span>
+                 <span id="hero__slider-btn" class="hero__slider-btn"> 2 </span>
+                 <span id="hero__slider-btn" class="hero__slider-btn"> 3 </span>
+             </div>
     </section>
     <div class="about">
     <div class="about__container">
@@ -116,14 +128,14 @@
                 </div>
                 <div class="flex__big">
                     <div class="flex__sheep">
-                        <img class="photo__sheep" alt="view of sheeps" src="about-sheep.jpg">
+                        <img class="image--sheep" alt="view of sheeps" src="about-sheep.jpg">
                     </div>
                     <div class="flex__small">
-                        <div class="lake__container">
-                            <img class="photo__lake" alt="upper view of lake" src="about-lake.jpg">
+                        <div class="flex__lake">
+                            <img class="image--lake" alt="upper view of lake" src="about-lake.jpg">
                         </div>
-                        <div class="cliff__container">
-                            <div class="photo__cliff">  </div>
+                        <div class="flex__cliff">
+                            <div class="image--cliff">  </div>
                         </div>
                     </div>
                 </div>
@@ -131,6 +143,6 @@
         </div>
     </div>
     </div>
-    <script src="javascript.js"></script>
+    <script src="javascript.js"> </script>
 </body>
 </html>
