@@ -27,7 +27,6 @@ burgerBtn.addEventListener("click",()=>{
 );
 
 
-
 droplink.onclick = function(){
 
  if(dropdown.style.visibility == "hidden"){
@@ -47,7 +46,6 @@ droplink.onclick = function(){
     contact.style.paddingTop = "0px";
 
 }
-
 }
 
 
