@@ -9,7 +9,6 @@
     <link href="fonts.css" rel='stylesheet' type='text/css'>
     <title>Save the planet</title>
 </head>
-
 <body class="body">
     <header class="nav">
         <div class="nav__container">
@@ -18,8 +17,8 @@
                     <img class="logo__image" src="Logo.png" alt="Save the planet Logo">
                 </a>
             </div>
-            <nav id="navbar" class="navbar">
-                <div id="navbar__hamburger" class="navbar__hamburger">
+            <nav class="navbar">
+                <div class="navbar__hamburger">
                     <span class="navbar__hamburger-bar"></span>
                 </div>
                 <ul class="nav__list">
@@ -32,9 +31,9 @@
                         <a class="nav__link--home" href="#">Home</a>
                     </li>
                     <li class="nav__item">
-                        <a id="nav__link--dropdown" class="nav__link--dropdown" href="#">Story</a>
+                        <a class="nav__link--dropdown" href="#">Story</a>
                     </li>
-                    <li id="nav__item--contact" class="nav__item--contact">
+                    <li class="nav__item--contact">
                         <a class="nav__link--contact" href="#">Contact</a>
                     </li>
                     <li class="nav__item">
@@ -44,8 +43,8 @@
                         <a class="nav__link--account" href="#">Account</a>
                     </li>
                 </ul>
-                <div id="dropdown" class="dropdown">
-                    <ul id="dropdown__list" class="dropdown__list">
+                <div class="dropdown">
+                    <ul class="dropdown__list">
                         <li class="dropdown__item">
                             <a class="dropdown__link" href="#">Team</a>
                         </li>
@@ -62,7 +61,7 @@
             </nav>
         </div>
     </header>
-    <section id="hero" class="hero">
+    <section class="hero">
         <div class="container">
             <div class="aside">
                 <aside class="aside__contact">
@@ -85,9 +84,15 @@
                 </div>
             </div>
             <div class="hero__slider">
-                <span id="hero__slider-btn--active" class="hero__slider-btn"> 1 </span>
-                <span id="hero__slider-btn" class="hero__slider-btn"> 2 </span>
-                <span id="hero__slider-btn" class="hero__slider-btn"> 3 </span>
+                <div class="hero__sliderBtn" data-background = "hero-image.jpg"> 
+                    <p class="sliderBtn__caption">1</p> 
+                </div>
+                <div class="hero__sliderBtn" data-background = "about-cliff.jpg"> 
+                    <p class="sliderBtn__caption">2</p>
+                 </div>
+                <div class="hero__sliderBtn" data-background = "about-sheep.jpg">
+                    <p class="sliderBtn__caption" >3</p>
+                 </div>
             </div>
     </section>
     <section class="about">
@@ -124,15 +129,15 @@
                             <a class="card__button" href="#">Find out more</a>
                         </div>
                     </div>
-                    <div class="flex__big">
-                        <div class="flex__sheep">
+                    <div class="about__flex-galleryWrapper">
+                        <div class="about__flex-Landscape">
                             <img class="image--sheep" alt="view of sheeps" src="about-sheep.jpg">
                         </div>
-                        <div class="flex__small">
-                            <div class="flex__lake">
+                        <div class="about__flex-gallerySmallWrapper">
+                            <div class="about__flex-Normal">
                                 <img class="image--lake" alt="upper view of lake" src="about-lake.jpg">
                             </div>
-                            <div class="flex__cliff">
+                            <div class="about__flex-Normal--cliff">
                                 <div class="image--cliff"> </div>
                             </div>
                         </div>
