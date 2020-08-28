@@ -9,6 +9,7 @@
     <link href="fonts.css" rel='stylesheet' type='text/css'>
     <title>Save the planet</title>
 </head>
+
 <body class="body">
     <header class="nav">
         <div class="nav__container">
@@ -23,8 +24,8 @@
                 </div>
                 <ul class="nav__list">
                     <div class="nav__logo--dropdown">
-                        <a class="logo--dropdown" href="#">
-                            <img class="logo__image--dropdown" src="Logo.png" alt="Save the planet Logo">
+                        <a class="logo" href="#">
+                            <img class="logo__image" src="Logo.png" alt="Save the planet Logo">
                         </a>
                     </div>
                     <li class="nav__item--home">
@@ -48,11 +49,9 @@
                         <li class="dropdown__item">
                             <a class="dropdown__link" href="#">Team</a>
                         </li>
-
                         <li class="dropdown__item">
                             <a class="dropdown__link" href="#">Project</a>
                         </li>
-
                         <li class="dropdown__item">
                             <a class="dropdown__link" href="#">Future</a>
                         </li>
@@ -66,16 +65,23 @@
             <div class="aside">
                 <aside class="aside__contact">
                     <ul class="aside__content">
-                        <li class="aside__item">+04 070 991 598</li>
-                        <li class="aside__item">wild@life.com</li>
-                        <li class="aside__item">Wild Avenue, San Francisco, CA</li>
+                        <li class="aside__item">
+                            <address class="aside__address--nobefore">070 991 598</address>
+                        </li>
+                        <li class="aside__item">
+                            <address class="aside__address">wild@life.com</address>
+                        </li>
+                        <li class="aside__item">
+                            <address class="aside__address"> Avenue, San Francisco, CA </address>
+                        </li>
                     </ul>
                 </aside>
             </div>
             <div class="hero__inner">
-                <p class="hero__heading">we teach you to protect our </p>
-                <h1 class="hero__title">planet</h1>
-                <p class="hero__content">Our planet is precious and vital for our beautiful lives,if we don't take care
+                <p class="hero__heading">We teach you to protect our</p>
+                <h1 class="hero__title">Planet</h1>
+                <p class="hero__description">Our planet is precious and vital for our beautiful lives,if we don't take
+                    care
                     of it it will dissapear along with us.</p>
                 <p class="hero__undernote">*Please take note that your actions matter more than you think.</p>
                 <div class="hero__cta">
@@ -83,16 +89,18 @@
                     <a class="hero__button--transparent" href="#">Play video</a>
                 </div>
             </div>
-            <div class="hero__slider">
-                <div class="hero__sliderBtn" data-background = "hero-image.jpg"> 
-                    <p class="sliderBtn__caption">1</p> 
+            <div class="hero__js-slider">
+                <div class="slider">
+                    <div class="slider__button" data-background="hero-image.jpg">
+                        <p class="slider__caption">1</p>
+                    </div>
+                    <div class="slider__button" data-background="about-cliff.jpg">
+                        <p class="slider__caption">2</p>
+                    </div>
+                    <div class="slider__button" data-background="about-sheep.jpg">
+                        <p class="slider__caption">3</p>
+                    </div>
                 </div>
-                <div class="hero__sliderBtn" data-background = "about-cliff.jpg"> 
-                    <p class="sliderBtn__caption">2</p>
-                 </div>
-                <div class="hero__sliderBtn" data-background = "about-sheep.jpg">
-                    <p class="sliderBtn__caption" >3</p>
-                 </div>
             </div>
     </section>
     <section class="about">
@@ -116,7 +124,7 @@
                 </div>
             </div>
             <div class="about__gallery">
-                <div class="about__flex">
+                <div class="about__wrapper">
                     <div class="about__card">
                         <div class="card__content">
                             <h1 class="card__title">Wildlife</h1>
@@ -129,15 +137,15 @@
                             <a class="card__button" href="#">Find out more</a>
                         </div>
                     </div>
-                    <div class="about__flex-galleryWrapper">
-                        <div class="about__flex-Landscape">
+                    <div class="about__js-wrapper--cover">
+                        <div class="about__wrapper-landscape">
                             <img class="image--sheep" alt="view of sheeps" src="about-sheep.jpg">
                         </div>
-                        <div class="about__flex-gallerySmallWrapper">
-                            <div class="about__flex-Normal">
+                        <div class="about__js-wrapper--small">
+                            <div class="about__wrapper-normal">
                                 <img class="image--lake" alt="upper view of lake" src="about-lake.jpg">
                             </div>
-                            <div class="about__flex-Normal--cliff">
+                            <div class="about__wrapper-normal--cliff">
                                 <div class="image--cliff"> </div>
                             </div>
                         </div>
@@ -148,4 +156,5 @@
     </section>
     <script src="javascript.js"> </script>
 </body>
+
 </html>
